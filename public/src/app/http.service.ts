@@ -7,4 +7,8 @@ import { HttpClient } from '@angular/common/http';
 export class HttpService {
 
   constructor(private _http: HttpClient) { }
+
+  login() {
+    return this._http.get('/login');
+  }
 }
